@@ -1,0 +1,6 @@
+- git remote --prune origin
+Eliminar ramas remotas que no tengan una contraparte local. 
+Por ejemplo, se eliminará un tmp de rama remota si ya no existe una 
+rama local con el mismo nombre. Esto también respeta las especificaciones
+de referencia, p. git push --prune remote refs/heads/*:refs/tmp/* se aseguraría 
+de que remote refs/tmp/foo se elimine si refs/heads/foo no existe.
